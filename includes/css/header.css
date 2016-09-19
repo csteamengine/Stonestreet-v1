@@ -1,0 +1,54 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40vh;
+    width: 100%;
+    background: url('/includes/images/apple-iphone-smartphone-desk.jpg') center no-repeat fixed;
+    background-size: cover;
+}
+#header_grid{
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+#header_grid a{
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+}
+#header_grid a:hover{
+    color: #a6a2a0;
+
+}
+#s_logo{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -50px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+#s_logo.mobile{
+    margin-top: -70px;
+}
+
+#header_grid.mobile{
+    display: none;
+}
+#mobile_menu{
+    position: absolute;
+
+}
