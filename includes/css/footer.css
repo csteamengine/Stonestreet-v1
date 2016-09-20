@@ -21,6 +21,7 @@ footer{
     -webkit-justify-content: space-around;
 }
 .footer_item a{
+    font-size: 20px;
     color: white;
     text-decoration: none;
 }

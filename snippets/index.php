@@ -6,7 +6,7 @@
  * Time: 2:15 PM
  */
 
-
+include "../includes/php/base.php";
 ?>
 
 <!DOCTYPE html>
