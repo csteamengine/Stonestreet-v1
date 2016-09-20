@@ -1,0 +1,258 @@
+body{
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+header{
+    margin-top: 20px;
+    width: 100%;
+
+}
+#logout{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#header_list{
+    width: 80%;
+    margin-left: 10%;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.admin_list{
+
+}
+#S{
+    z-index: -1;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+li{
+    cursor: pointer;
+    cursor: hand;
+}
+li.selected{
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+.divs{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+
+    display: none;
+}
+.divs.selected{
+    display: block;
+}
+
+
+#project_form input{
+    display:block;
+    margin: 5px auto 5px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+}
+#project_form textarea{
+    display:block;
+    margin: 5px auto 5px;
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#home{
+
+}
+#projects{
+
+}
+#gallery{
+
+}
+#about{
+
+}
+#contact{
+
+}
+#snippets{
+
+}
+#other_projects{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    display:                 -webkit-flex; /* Safari */
+    flex-wrap:               wrap;
+    -webkit-flex-wrap:       wrap;         /* Safari */
+    justify-content:         center;
+    -webkit-justify-content: center;       /* Safari */
+}
+.project_tile{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.content{
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(0,0,0,.4);
+}
+.content h1{
+    margin-top: 0;
+}
+.project_tile:hover .content{
+    display: block;
+}
+.project_tile:hover .no_image_title{
+    display: none;
+}
+.project_tile:hover #snippet_title{
+    display: none;
+}
+.no_image_title{
+    height: 100px;
+    width: 200px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -50px;
+    display: block;
+}
+
+.edit_input{
+    display: block;
+    height:20px;
+    width: 150px;
+    margin: 10px auto 10px;
+}
+.edit_text{
+    display: block;
+    height: 100px;
+    width: 300px;
+    margin: 10px auto 10px;
+}
+.edit_project_button{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 60px;
+}
+.delete_project_button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+}
+
+#home_page{
+    display: flex;
+    display:                 -webkit-flex; /* Safari */
+    flex-wrap:               wrap;
+    -webkit-flex-wrap:       wrap;         /* Safari */
+    justify-content:         center;
+    -webkit-justify-content: center;       /* Safari */
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+}
+#home_page div{
+    margin: 50px;
+    text-align: left;
+}
+#life_photos_form{
+    width: 100%;
+    padding-bottom: 50px;
+}
+#life_photos{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+#life_photos_form_delete{
+    width: 100%;
+    padding-bottom: 50px;
+}
+#life_photos_delete{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.gridContent{
+    width: 100px;
+    height: 66px;
+    position: relative;
+    margin: 10px;
+    border: none;
+    font-size: 0;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-size: 100%;
+    cursor: hand;
+    cursor: pointer;
+
+}
+.active{
+    border: 1px solid blue;
+}
+#add_life_images_submit{
+    margin: -50px auto;
+}
+#add_more_images{
+    background: url('../includes/images/plus_icon.png') center no-repeat;
+    background-size: contain;
+    border: 1px solid blue;
+
+}
+#add_life_images_form{
+    padding-top: 50px;
+    position: fixed;
+    height: 200px;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    background-color: rgba(255,255,255,.9);
+}
+#add_life_images_form input{
+    display: block;
+    margin: 20px auto 20px auto;
+}
+

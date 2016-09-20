@@ -1,0 +1,87 @@
+header{
+    background-color: #222222;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    color: white;
+    font-size: x-large;
+    text-align: left;
+}
+body{
+    background-color: white;
+    height: 130vh;
+    margin-top: 350px;
+    text-align: center;
+}
+header ul{
+    position: absolute;
+    bottom: 5%;
+    width:90%;
+    padding: 0;
+    margin-left: 5%;
+    justify-content: space-between;
+    display: inline-flex;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: grey;
+}
+#back,#source{
+    font-size: x-large;
+    position: fixed;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    width: 200px;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+#back{
+    bottom: 20px;
+    left: 20px;
+}
+#source{
+    bottom: 20px;
+    right: 20px;
+}
+#back:hover,#source:hover{
+    background-color: rgba(0,0,0,.8);
+}
+#headerImg{
+    position: absolute;
+    margin-left: -150px;
+    left: 50%;
+    top: 10%;
+    width: 300px;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+#headerImg.small{
+    width: 150px;
+    margin-left: -75px;
+    top: 7%;
+
+}
+#upArrow{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 200px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

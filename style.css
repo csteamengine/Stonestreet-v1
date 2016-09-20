@@ -1,0 +1,99 @@
+
+.text_item{
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto 50px auto;
+    text-align: center;
+}
+
+.grid{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.grid_item{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 20px;
+    border: none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+.grid_item_small{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+.gridTitle{
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -150px;
+    width: 300px;
+    height: 40px;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.grid_date{
+    z-index: 1;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: 40px;
+    z-index: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+.grid_item:hover .gridTitle{
+    top: 80%;
+}
+.grid_item:hover .grid_date{
+    opacity: .5;
+}
+#about_me{
+    max-width: 600px;
+}
+#accomp{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#photos{
+    margin-bottom: 0;
+}
+@media (max-width: 600px){
+    #accomp{
+        height: 300px;
+        width: 300px;
+    }
+    .grid_item_small{
+        height: 100px;
+        width: 100px;
+    }
+}

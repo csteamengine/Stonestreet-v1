@@ -1,0 +1,74 @@
+
+#grid{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    pointer-events: all;
+    height: auto;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 10px;
+    display:                 flex;
+    display:                 -webkit-flex; /* Safari */
+    flex-wrap:               wrap;
+    -webkit-flex-wrap:       wrap;         /* Safari */
+    justify-content:         center;
+    -webkit-justify-content: center;       /* Safari */
+}
+.gridItem{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 5px;
+    position: relative;
+
+}
+.overlay{
+    border-radius: 5px;
+}
+
+.overlay h5{
+    width:200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    color: rgb(150,150,150);
+    opacity: 0;
+
+}
+.overlay:hover h5{
+    opacity:1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.gridItem:hover .overlay{
+    background-color: rgba(0,0,0,.5);
+}
+.title{
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -150px;
+    color:white;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.overlay:hover .title{
+    top: 40%;
+}
+#back{
+    text-decoration: none;
+    color: black;
+}
+#back:hover{
+    color: #a6a2a0;
+}
