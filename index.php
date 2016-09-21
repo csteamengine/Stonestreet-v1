@@ -20,7 +20,7 @@ include "includes/php/base.php";
     <title>Home | StoneStreet</title>
     <link rel="icon" type="image/x-icon" href="includes/images/faviconblack.png" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../includes/css/shared.css">
+    <link rel="stylesheet" href="includes/css/shared.css">
     <link rel="stylesheet" href="includes/css/header.css">
     <link rel="stylesheet" href="includes/css/footer.css">
     <script src="/includes/js/jquery-2.2.4.min.js" type="application/javascript"></script>

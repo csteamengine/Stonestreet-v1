@@ -1,3 +1,6 @@
+#subcontent{
+    overflow-x: hidden;
+}
 #myName{
     font-size: 40px;
     opacity: 1;
@@ -50,6 +53,7 @@
     -o-transition: all 0.3s;
     transition: all 0.3s;
     border-radius: 20px;
+    overflow-y: hidden;
 }
 
 /*Selected Section Standard code*/
