@@ -4,10 +4,11 @@ header{
     left: 0;
     height: 400px;
     width: 100%;
-    background: url('/includes/images/apple-iphone-smartphone-desk.jpg') center -300px no-repeat fixed;
+    background: url('/includes/images/apple-iphone-smartphone-desk.jpg') center -200px no-repeat fixed;
     background-size: cover;
     box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
+
 
 #header_grid{
     position: relative;
@@ -79,4 +80,10 @@ header{
     cursor: pointer;
     cursor: hand;
     z-index:2;
+}
+@media(max-width: 600px){
+    header{
+        background: url('/includes/images/apple-iphone-smartphone-desk.jpg') center -100px no-repeat fixed;
+        background-size: auto;
+    }
 }
