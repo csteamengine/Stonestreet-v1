@@ -38,6 +38,14 @@ include "../includes/php/header.php";
             <h3>You can reach me anywhere,</h3>
             <h2>with just the click of a button!</h2>
         </div>
+        <div id="contact" class="grid">
+            <div class="grid_item">
+
+            </div>
+            <div class="grid_item">
+
+            </div>
+        </div>
 <!--        <div id="contactButtons">-->
 <!--            <img class="list_option" id="linked_in_option" src="../includes/images/icons/LinkedInIcon.png" onclick="show_bubble('linked_in')">-->
 <!--            <img class="list_option" id="github_option" src="../includes/images/icons/GithubIcon.png" onclick="show_bubble('github')">-->

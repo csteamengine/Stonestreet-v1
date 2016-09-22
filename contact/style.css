@@ -3,3 +3,36 @@
 .contact_hr{
     width: 60%;
 }
+#subcontent{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#contact{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 10px;
+}
+.grid_item{
+    width: 350px;
+    height: 500px;
+    position: relative;
+    margin: 20px;
+    border: none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+
+}

@@ -49,7 +49,7 @@ include "includes/php/header.php";
             while($result = mysqli_fetch_assoc($query)){
                 ?>
                 <div class="grid_item" style="background-image: url('/includes/images/projects/<?= $result['image'] ?>')">
-                    <a href="<?= $result['url'] ?>">
+                    <a class="taphover" href="<?= $result['url'] ?>">
                         <div class="hover_overlay"></div>
                         <h2 id="proj_<?= $result['id'] ?>" class="gridTitle"><?= $result['title'] ?></h2>
                         <h4 class="grid_date"><?= substr($result['created'],0,4) ?></h4>
@@ -72,7 +72,7 @@ include "includes/php/header.php";
 
             ?>
             <div id="accomp" class="grid_item" style="background-image: url('/includes/images/projects/<?= $result['image'] ?>')">
-                <a href="#">
+                <a class="taphover" href="#">
                     <div class="hover_overlay" id="accompOverlay"></div>
                     <h2 id="accompTitle" class="gridTitle"><?= $result['title'] ?></h2>
                     <h4 class="grid_date"><?= substr($result['created'],0,4) ?></h4>
@@ -105,6 +105,20 @@ include "includes/php/header.php";
 <script src="includes/js/mobileDetect.js"></script>
 <script type="application/javascript" src="main.js"></script>
 <script type="application/javascript" src="/includes/js/shared.js"></script>
+<script>
+    $('a.taphover').on('touchend', function (e) {
+        'use strict'; //satisfy code inspectors
+        var link = $(this); //preselect the link
+        if (link.hasClass('hover')) {
+            return true;
+        } else {
+            link.addClass('hover');
+            $('a.taphover').not(this).removeClass('hover');
+            e.preventDefault();
+            return false; //extra, and to make sure the function has consistent return points
+        }
+    });
+</script>
 </body>
 <?php
 include "includes/php/footer.php";
