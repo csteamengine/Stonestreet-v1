@@ -15,8 +15,7 @@
     -webkit-flex-wrap: wrap;
     justify-content: center;
     -webkit-justify-content: center;
-    background-color: rgba(0,0,0,.8);
-    border-radius: 10px;
+
 }
 .grid_item{
     width: 350px;
@@ -31,8 +30,28 @@
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    background-color: black;
     background-position: center;
     background-size: cover;
+
+}
+.icon{
+    opacity: .5;
+    height: 70px;
+    width: 70px;
+    border-radius: 45px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    padding: 10px;
+    /*cursor: pointer;*/
+    /*cursor: hand;*/
+}
+.icon a{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.icon:hover{
+    opacity: .6;
 
 }

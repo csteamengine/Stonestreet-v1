@@ -39,11 +39,14 @@ include "../includes/php/header.php";
             <h2>with just the click of a button!</h2>
         </div>
         <div id="contact" class="grid">
-            <div class="grid_item">
+            <div id="email" class="grid_item">
 
             </div>
-            <div class="grid_item">
-
+            <div id="other" class="grid_item">
+                <a href="#" id="github" class="icon" target="_blank"></a>
+                <a href="#" id="face" class="icon" target="_blank"></a>
+                <a href="#" id="github" class="icon" target="_blank"></a>
+                <a href="#" id="github" class="icon" target="_blank"></a>
             </div>
         </div>
 <!--        <div id="contactButtons">-->
