@@ -43,36 +43,12 @@ include "../includes/php/header.php";
 
             </div>
             <div id="other" class="grid_item">
-                <a href="#" id="github" class="icon" target="_blank"></a>
-                <a href="#" id="face" class="icon" target="_blank"></a>
-                <a href="#" id="github" class="icon" target="_blank"></a>
-                <a href="#" id="github" class="icon" target="_blank"></a>
+                <a href="https://github.com/csteamengine" id="github" class="icon" target="_blank"></a>
+                <a href="https://www.facebook.com/csteenhagen" id="facebook" class="icon" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/gregory-steenhagen-067625101" id="linked_in" class="icon" target="_blank"></a>
+                <a href="https://www.pinterest.com/charliesteenhag/" id="pinterest" class="icon" target="_blank"></a>
             </div>
         </div>
-<!--        <div id="contactButtons">-->
-<!--            <img class="list_option" id="linked_in_option" src="../includes/images/icons/LinkedInIcon.png" onclick="show_bubble('linked_in')">-->
-<!--            <img class="list_option" id="github_option" src="../includes/images/icons/GithubIcon.png" onclick="show_bubble('github')">-->
-<!--            <img class="list_option selected_list" id="email_option" src="../includes/images/icons/EmailIcon.png" onclick="show_bubble('email')">-->
-<!--            <img class="list_option" id="facebook_option" src="../includes/images/icons/FacebookIcon.png" onclick="show_bubble('facebook')">-->
-<!--            <img class="list_option" id="pinterest_option" src="../includes/images/icons/1459880778_pinterest-hexagon-gloss-social-media.png" onclick="show_bubble('pinterest')">-->
-<!--        </div>-->
-<!--        <div id="sections">-->
-<!--            <div id="linked_in" class="bubble">-->
-<!---->
-<!--            </div>-->
-<!--            <div id="github" class="bubble">-->
-<!---->
-<!--            </div>-->
-<!--            <div id="email" class="bubble">-->
-<!---->
-<!--            </div>-->
-<!--            <div id="facebook" class="bubble">-->
-<!---->
-<!--            </div>-->
-<!--            <div id="pinterest" class="bubble">-->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
     </div>
 </div>
 

@@ -18,8 +18,6 @@
 
 }
 .grid_item{
-    width: 350px;
-    height: 500px;
     position: relative;
     margin: 20px;
     border: none;
@@ -34,6 +32,7 @@
     background-size: cover;
 
 }
+
 .icon{
     opacity: .5;
     height: 70px;
@@ -43,15 +42,33 @@
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow:         inset 0 0 10px #000000;
     padding: 10px;
-    /*cursor: pointer;*/
-    /*cursor: hand;*/
-}
-.icon a{
-    height: 100%;
-    width: 100%;
-    position: absolute;
+    display: block;
+    margin: 5px auto 5px auto;
 }
 .icon:hover{
     opacity: .6;
-
+}
+#github{
+    background: url('../includes/images/icons/github.png') center no-repeat;
+    background-size: 90%;
+}
+#linked_in{
+    background: url('../includes/images/icons/linked_in.png') center no-repeat;
+    background-size: 65%;
+}
+#facebook{
+    background: url('../includes/images/icons/facebook.png') center no-repeat;
+    background-size: 90%;
+}
+#pinterest{
+    background: url('../includes/images/icons/pinterest.png') center no-repeat;
+    background-size: 80%;
+}
+#email{
+    width: 350px;
+    background-color: rgba(0,0,0,.6);
+}
+#other{
+    width: 150px;
+    padding: auto;
 }
