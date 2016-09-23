@@ -12,8 +12,11 @@ include "../includes/php/base.php";
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Snippets | Stonestreet</title>
     <link rel="icon" type="image/x-icon" href="/faviconblack.png" />
+
 
     <link rel="icon" type="image/x-icon" href="../includes/images/faviconblack.png" />
     <link rel="stylesheet" href="snippets.css">
@@ -59,6 +62,8 @@ include "../includes/php/base.php";
 </div>
 
 <?php include "../includes/php/footer.php" ?>
+<script type="application/javascript" src="/includes/js/shared.js"></script>
+
 <script src="../includes/js/mobileDetect.js"></script>
 </body>
 

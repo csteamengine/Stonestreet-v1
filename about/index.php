@@ -11,6 +11,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About | StoneStreet</title>
     <link rel="icon" type="image/x-icon" href="/faviconblack.png" />
 
@@ -88,6 +90,7 @@ include "../includes/php/header.php";
 <?php
 include "../includes/php/footer.php";
 ?>
+<script type="application/javascript" src="/includes/js/shared.js"></script>
 <script src="/includes/js/mobileDetect.js"></script>
 </body>
 </html>
