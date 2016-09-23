@@ -29,15 +29,7 @@
     width: 350px;
     margin: 0 auto;
 }
-#Courses{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 40px;
-    padding-bottom: 50px;
-}
-#Courses h1{
-    font-size: 35px;
-}
+
 
 #grid{
     width: 80%;
@@ -58,22 +50,4 @@
     height: 20px;
     width: 100px;
     font-weight: 900;
-}
-#coursesGrid{
-    padding-bottom: 30px;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
-    justify-content: center;
-    -webkit-justify-content: center;
-}
-.coursesContent{
-    font-weight: 900;
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    position: relative;
-    height: 20px;
 }
