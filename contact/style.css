@@ -51,7 +51,7 @@
 }
 #github{
     background: url('../includes/images/icons/github.png') center no-repeat;
-    background-size: 90%;
+    background-size: 65%;
 }
 #linked_in{
     background: url('../includes/images/icons/linked_in.png') center no-repeat;
@@ -59,11 +59,11 @@
 }
 #facebook{
     background: url('../includes/images/icons/facebook.png') center no-repeat;
-    background-size: 90%;
+    background-size: 65%;
 }
 #pinterest{
     background: url('../includes/images/icons/pinterest.png') center no-repeat;
-    background-size: 80%;
+    background-size: 65%;
 }
 #email{
     width: 350px;

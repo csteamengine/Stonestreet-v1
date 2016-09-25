@@ -5,6 +5,10 @@
  * Date: 9/19/16
  * Time: 2:19 PM
  */
+
+session_start();
+
+
 $parent = basename(dirname($_SERVER['PHP_SELF']));
 if($parent == ""){
     $file = "../stonestreet_config.txt";

@@ -9,7 +9,7 @@
 ?>
 
 <header>
-    <div class="overlay"></div>
+    <div id="header_overlay" ></div>
     <div id="header_grid" hidden>
         <div class="header_item" id="home_div"><a href="/">Home</a></div>
         <div class="header_item" id="portfolio_nav"><a  href="/portfolio/">Portfolio</a></div>
