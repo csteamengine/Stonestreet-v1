@@ -6,11 +6,11 @@
  * Time: 2:19 PM
  */
 
-session_start();
+//session_start();
 
 
 $parent = basename(dirname($_SERVER['PHP_SELF']));
-if($parent == "" || $parent == "Stonestreet"){
+if($parent == ""){
     $file = "../stonestreet_config.txt";
 }else{
     $file = "../../stonestreet_config.txt";

@@ -101,6 +101,9 @@
         height: 150px;
         margin: 5px;
     }
+    #accomp .grid_date{
+        top: 75%;
+    }
     .grid_item .gridTitle{
         font-size: 12px;
     }

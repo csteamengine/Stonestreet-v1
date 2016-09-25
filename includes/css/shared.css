@@ -21,8 +21,11 @@ body{
     z-index:1;
     background-color: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
 
+}
+#subcontent{
+    overflow-x: hidden;
+}
 .overlay{
     position: absolute;
     top: 0;
