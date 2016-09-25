@@ -16,12 +16,19 @@
 }
 .gridItem{
     width: 300px;
-    height: 200px;
-    margin: 20px;
-    padding: 20px;
-    background-color: rgba(0,0,0,.5);
-    border-radius: 5px;
+    height: 300px;
     position: relative;
+    margin: 20px;
+    border: none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-size: cover;
+    background-position: center;
 
 }
 .overlay{
@@ -29,41 +36,45 @@
 }
 
 .overlay h5{
-    width:200px;
-    top: 50%;
-    left: 50%;
-    margin-left: -100px;
-    position: absolute;
-    color: rgb(150,150,150);
+    z-index: 1;
     opacity: 0;
-
-}
-.overlay:hover h5{
-    opacity:1;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-left: -125px;
+    width: 250px;
+    height: 40px;
+    pointer-events: none;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+
+}
+.overlay:hover h5{
+    opacity: .5;
 }
 .gridItem:hover .overlay{
     background-color: rgba(0,0,0,.5);
 }
 .title{
-    width: 300px;
-    height: 20px;
+    color: white;
     position: absolute;
-    top: 50%;
-    margin-top: -10px;
+    top: 80%;
     left: 50%;
+    margin-top: -20px;
     margin-left: -150px;
-    color:white;
+    width: 300px;
+    height: 40px;
+    pointer-events: none;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 .overlay:hover .title{
-    top: 40%;
+    top: 70%;
 }
 #back{
     text-decoration: none;
@@ -71,4 +82,38 @@
 }
 #back:hover{
     color: #a6a2a0;
+}
+.date{
+    display: none;
+}
+@media (max-width: 600px){
+
+    .gridItem{
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+    }
+
+    .gridItem .title{
+        font-size: 12px;
+    }
+
+    .overlay h5{
+        display: none;
+
+    }
+    .date{
+        color: white;
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        width: 150px;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+    }
+    .gridItem:hover .date{
+        opacity: .5;
+    }
+
 }

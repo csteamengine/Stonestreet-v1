@@ -45,8 +45,9 @@ include "../includes/php/header.php";
             $query = mysqli_query($conn,$sql);
             while($result = mysqli_fetch_assoc($query)) {
                 ?>
-                <a href="<?= $result['url'] ?>" target="_blank">
-                    <div class="grid_item">
+                <a class="taphover" href="../focus/?id=<?= $result['id'] ?>">
+                    <div class="grid_item" style="background: url('../includes/images/projects/<?= $result['image'] ?>') center no-repeat; background-size: cover;">
+                        <div class="hover_overlay"></div>
                         <h3><?= $result['title'] ?></h3>
                         <h4><?= substr($result['created'],0,4) ?></h4>
                     </div>
@@ -55,10 +56,13 @@ include "../includes/php/header.php";
             }
             ?>
 
-            <div class="grid_item">
-                <h3>More To Come...</h3>
-                <h4>Check Back Soon!</h4>
-            </div>
+            <a class="taphover">
+                <div class="grid_item">
+                    <div  class="check_back"></div>
+                    <h3>More To Come...</h3>
+                    <h4>Check Back Soon!</h4>
+                </div>
+            </a>
         </div>
         <div class="category grid" id="software" hidden>
             <?php
@@ -66,8 +70,10 @@ include "../includes/php/header.php";
             $query = mysqli_query($conn,$sql);
             while($result = mysqli_fetch_assoc($query)) {
                 ?>
-                <a href="<?= $result['url'] ?>">
-                    <div class="grid_item">
+                <a class="taphover" href="../focus/?id=<?= $result['id'] ?>">
+                    <div class="grid_item" style="background: url('../includes/images/projects/<?= $result['image'] ?>') center no-repeat; background-size: cover;">
+                        <div class="hover_overlay"></div>
+
                         <h3><?= $result['title'] ?></h3>
                         <h4><?= substr($result['created'],0,4) ?></h4>
                     </div>
@@ -75,10 +81,14 @@ include "../includes/php/header.php";
                 <?php
             }
             ?>
-            <div class="grid_item">
-                <h3>More To Come...</h3>
-                <h4>Check Back Soon!</h4>
-            </div>
+            <a class="taphover">
+                <div class="grid_item">
+                    <div class="check_back" ></div>
+                    <h3>More To Come...</h3>
+                    <h4>Check Back Soon!</h4>
+                </div>
+            </a>
+
         </div>
         <div class="category grid" id="hardware" hidden>
             <?php
@@ -86,8 +96,10 @@ include "../includes/php/header.php";
             $query = mysqli_query($conn,$sql);
             while($result = mysqli_fetch_assoc($query)) {
                 ?>
-                <a href="<?= $result['url'] ?>">
-                    <div class="grid_item">
+                <a class="taphover" href="../focus/?id=<?= $result['id'] ?>">
+                    <div class="grid_item" style="background: url('../includes/images/projects/<?= $result['image'] ?>') center no-repeat; background-size: cover;">
+                        <div class="hover_overlay"></div>
+
                         <h3><?= $result['title'] ?></h3>
                         <h4><?= substr($result['created'],0,4) ?></h4>
                     </div>
@@ -95,10 +107,13 @@ include "../includes/php/header.php";
                 <?php
             }
             ?>
-            <div class="grid_item">
-                <h3>More To Come...</h3>
-                <h4>Check Back Soon!</h4>
-            </div>
+            <a class="taphover">
+                <div class="grid_item">
+                    <div class="check_back"></div>
+                    <h3>More To Come...</h3>
+                    <h4>Check Back Soon!</h4>
+                </div>
+            </a>
         </div>
         <div class="category grid" id="other" hidden>
             <?php
@@ -106,8 +121,9 @@ include "../includes/php/header.php";
             $query = mysqli_query($conn, $sql);
             $result = mysqli_fetch_assoc($query);
             ?>
-            <a download="<?= $result['resume'] ?>" href="../includes/files/<?= $result['resume'] ?>"  >
+            <a class="taphover" download="<?= $result['resume'] ?>" href="../includes/files/<?= $result['resume'] ?>"  >
                 <div class="grid_item">
+                    <div class="check_back"></div>
                     <h3>My Resume</h3>
                     <h4>Click to Download</h4>
                 </div>
@@ -116,7 +132,20 @@ include "../includes/php/header.php";
     </div>
 </div>
 
-
+<script>
+    $('a.taphover').on('touchend', function (e) {
+        'use strict'; //satisfy code inspectors
+        var link = $(this); //preselect the link
+        if (link.hasClass('hover')) {
+            return true;
+        } else {
+            link.addClass('hover');
+            $('a.taphover').not(this).removeClass('hover');
+            e.preventDefault();
+            return false; //extra, and to make sure the function has consistent return points
+        }
+    });
+</script>
 <script src="../includes/js/mobileDetect.js"></script>
 <script type="application/javascript" src="/includes/js/shared.js"></script>
 <script type="application/javascript" src="portfolio.js"></script>

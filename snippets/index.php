@@ -39,8 +39,10 @@ include "../includes/php/base.php";
                <div class="gridItem">
                    <a href="<?= $result['url'] ?>">
                        <div class="overlay">
+                           <div class="hover_overlay"></div>
                            <h2 class="title"><?= $result['title'] ?></h2>
                            <h5><?= $result['brief'] ?></h5>
+                           <h6 class="date"><?= $result['brief'] ?></h6>
                        </div>
                    </a>
                </div>
@@ -49,10 +51,13 @@ include "../includes/php/base.php";
            ?>
 
            <div class="gridItem">
-               <a href="#">
+               <a>
                    <div class="overlay comingSoon">
+                       <div class="hover_overlay"></div>
+
                        <h2 class="title">Coming Soon!</h2>
                        <h5>Check back later for more!</h5>
+                       <h6 class="date">Check back later for more!</h6>
                    </div>
                </a>
            </div>
