@@ -45,7 +45,7 @@ include "../includes/php/header.php";
                 figure out what I wanted to do with my life. I have always been a Cyclone fan and I always knew I wanted to attend Iowa State, so that choice was easy for me.
             </p>
             <p>I started college as a Mechanical Engineering major and quickly decided to switch to software, after I realized computers
-                were what I truly enjoyed working with. After switching, a friend and I started the Web Development Club of which I am
+                were what I truly enjoyed working with. After switching, a friend and I started the Web Development Club of which I am now
                 the President. </p>
         </div>
         <div id="Languages">
@@ -65,26 +65,6 @@ include "../includes/php/header.php";
             </div>
         </div>
 
-        <div id="Courses">
-            <h1>Relevant Courses</h1>
-            <hr>
-            <div id="coursesGrid">
-                <div class="coursesContent">Computer Science 227
-                </div>
-                <div class="coursesContent"> Computer Science 228
-                </div>
-                <div class="coursesContent"> Computer Science 309
-                </div>
-                <div class="coursesContent"> Computer Science 321
-                </div>
-                <div class="coursesContent"> Computer Science 327
-                </div>
-                <div class="coursesContent"> Computer Science 363
-                </div>
-                <div class="coursesContent"> Computer Engineering 281
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <?php
@@ -92,5 +72,6 @@ include "../includes/php/footer.php";
 ?>
 <script type="application/javascript" src="/includes/js/shared.js"></script>
 <script src="/includes/js/mobileDetect.js"></script>
+<script type="application/javascript" src="/includes/js/shared.js"></script>
 </body>
 </html>
