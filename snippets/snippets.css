@@ -5,8 +5,6 @@
     margin-top: 50px;
     pointer-events: all;
     height: auto;
-    background-color: rgba(0,0,0,.1);
-    border-radius: 10px;
     display:                 flex;
     display:                 -webkit-flex; /* Safari */
     flex-wrap:               wrap;
