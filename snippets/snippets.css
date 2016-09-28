@@ -53,9 +53,7 @@
 .overlay:hover h5{
     opacity: .5;
 }
-.gridItem:hover .overlay{
-    background-color: rgba(0,0,0,.5);
-}
+
 .title{
     color: white;
     position: absolute;
