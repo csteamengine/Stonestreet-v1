@@ -72,6 +72,5 @@ include "../includes/php/footer.php";
 ?>
 <script type="application/javascript" src="/includes/js/shared.js"></script>
 <script src="/includes/js/mobileDetect.js"></script>
-<script type="application/javascript" src="/includes/js/shared.js"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@ include "../includes/php/base.php";
            while($result = mysqli_fetch_assoc($query)){
                ?>
                <div class="gridItem">
-                   <a href="<?= $result['url'] ?>">
+                   <a class="taphover" href="<?= $result['url'] ?>">
                        <div class="overlay">
                            <div class="hover_overlay"></div>
                            <h2 class="title"><?= $result['title'] ?></h2>
@@ -67,10 +67,23 @@ include "../includes/php/base.php";
 </div>
 
 <?php include "../includes/php/footer.php" ?>
-<script type="application/javascript" src="/includes/js/shared.js"></script>
 
 <script src="../includes/js/mobileDetect.js"></script>
 <script type="application/javascript" src="/includes/js/shared.js"></script>
+<script>
+    $('a.taphover').on('touchend', function (e) {
+        'use strict'; //satisfy code inspectors
+        var link = $(this); //preselect the link
+        if (link.hasClass('hover')) {
+            return true;
+        } else {
+            link.addClass('hover');
+            $('a.taphover').not(this).removeClass('hover');
+            e.preventDefault();
+            return false; //extra, and to make sure the function has consistent return points
+        }
+    });
+</script>
 </body>
 
 </html>
