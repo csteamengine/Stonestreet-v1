@@ -6,6 +6,7 @@
  * Time: 2:19 PM
  */
 
+
 session_start();
 
 
@@ -15,6 +16,8 @@ if($parent == "" || $parent == "Stonestreet"){
 }else{
     $file = "../../stonestreet_config.txt";
 }
+//echo $parent;
+//exit;
 
 $json = "";
 if (file_exists($file))
@@ -29,7 +32,8 @@ if (file_exists($file))
     $json = $contents;
 }
 $json = json_decode($json);
-
+//echo "Username= ". $json->{'username'};
+//exit;
 //TODO change this for when the server is live.
 $dbhost = $json->{'host'};
 $dbname = $json->{'database'}; // the name of the database that you are going to use for this project

@@ -70,7 +70,7 @@ include "../includes/php/header.php";
 <?php
 include "../includes/php/footer.php";
 ?>
-<script src="/includes/js/mobileDetect.js"></script>
 <script type="application/javascript" src="/includes/js/shared.js"></script>
+<script src="/includes/js/mobileDetect.js"></script>
 </body>
 </html>
