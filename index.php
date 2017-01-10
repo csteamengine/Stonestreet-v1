@@ -35,9 +35,9 @@ include "includes/php/header.php";
         <div id="about_me" class="text_item">
             <h1>A little about me</h1>
             <p>
-                I am a Software engineering major at Iowa State University and I'm currently in my Senior year. I am the President
-                and a founding member of the ISU Web Development Club. As a kid I always had an interest in computers, and
-                Iowa State gave me the opportunity to make them my career.
+                I am a Software engineering major at Iowa State University and I'm currently in my Senior year. I am 
+                a founding member of the ISU Web Development Club, as well as a previous President. 
+                As a kid I always had an interest in computers, and Iowa State gave me the opportunity to make them my career. 
             </p>
         </div>
         <hr class="divider">
@@ -49,7 +49,7 @@ include "includes/php/header.php";
             while($result = mysqli_fetch_assoc($query)){
                 ?>
                 <div class="grid_item" style="background-image: url('/includes/images/projects/<?= $result['image'] ?>')">
-                    <a class="taphover" href="<?= $result['url'] ?>">
+                    <a class="taphover" href="/portfolio/project_view.php?id=<?= $result['id'] ?>">
                         <div class="hover_overlay"></div>
                         <h2 id="proj_<?= $result['id'] ?>" class="gridTitle"><?= $result['title'] ?></h2>
                         <h4 class="grid_date"><?= substr($result['created'],0,4) ?></h4>
@@ -72,14 +72,14 @@ include "includes/php/header.php";
 
             ?>
             <div id="accomp" class="grid_item" style="background-image: url('/includes/images/projects/<?= $result['image'] ?>')">
-                <a class="taphover" href="#">
+                <a class="taphover" href="/portfolio/project_view.php?id=<?= $result['id'] ?>">
                     <div class="hover_overlay" id="accompOverlay"></div>
                     <h2 id="accompTitle" class="gridTitle"><?= $result['title'] ?></h2>
                     <h4 class="grid_date"><?= substr($result['created'],0,4) ?></h4>
                 </a>
             </div>
             <p>
-                <?= $result['description'] ?>
+                <?= $result['text'] ?>
             </p>
         </div>
         <hr class="divider">
