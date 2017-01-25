@@ -117,6 +117,22 @@ include "../includes/php/header.php";
         </div>
         <div class="category grid" id="other" hidden>
             <?php
+            $sql = "SELECT * FROM projects WHERE active = 'yes' && category='other'";
+            $query = mysqli_query($conn,$sql);
+            while($result = mysqli_fetch_assoc($query)) {
+                ?>
+                <a class="taphover" href="../focus/?id=<?= $result['id'] ?>">
+                    <div class="grid_item" style="background: url('../includes/images/projects/<?= $result['image'] ?>') center no-repeat; background-size: cover;">
+                        <div class="hover_overlay"></div>
+
+                        <h3><?= $result['title'] ?></h3>
+                        <h4><?= substr($result['created'],0,4) ?></h4>
+                    </div>
+                </a>
+                <?php
+            }
+            ?>
+            <?php
             $sql = "SELECT * FROM users";
             $query = mysqli_query($conn, $sql);
             $result = mysqli_fetch_assoc($query);

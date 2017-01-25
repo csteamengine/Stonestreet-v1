@@ -1,0 +1,7 @@
+{  
+   "username":"stonestreet",
+   "password":"Stee1nhagen2016",
+   "host":"mysql.kellydevittceramics.com",
+   "database":"stonestreet",
+   "port":3306
+}

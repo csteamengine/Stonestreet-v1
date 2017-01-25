@@ -29,7 +29,7 @@ if($logged_in && get_value('action') != null){
             $project_description = get_value('project_description');
             $project_text = get_value('project_text');
             $type_select = get_value('type_select');
-            $check_title = "SELECT * FROM stonesu0_stonestreet.projects WHERE title ='".$project_title."'";
+            $check_title = "SELECT * FROM projects WHERE title ='".$project_title."'";
             $query_title = mysqli_query($conn,$check_title);
             if(mysqli_num_rows($query_title) ==0){
                 if($_FILES['file']['name'] != ""){
@@ -333,7 +333,7 @@ if($logged_in && get_value('action') != null){
     $username= get_value('username');
     $password = get_value('password');
 
-    $sql = "SELECT * FROM stonesu0_stonestreet.users WHERE username = '".mysqli_real_escape_string($conn, $username)."'";
+    $sql = "SELECT * FROM users WHERE username = '".mysqli_real_escape_string($conn, $username)."'";
     $query = mysqli_query($conn, $sql);
     if(mysqli_num_rows($query) > 0){
         $result = mysqli_fetch_assoc($query);
@@ -387,7 +387,7 @@ if($logged_in){
                 <form id="edit_home_projects" method="post" action="/admin/">
                     <input type="hidden" name="action" value="edit_home_projects">
                     <?php
-                    $sql = "SELECT * FROM stonesu0_stonestreet.projects";
+                    $sql = "SELECT * FROM projects";
                     $query = mysqli_query($conn,$sql);
                     while($result = mysqli_fetch_assoc($query)){
                         ?>
@@ -493,7 +493,7 @@ if($logged_in){
         </form>
         <div id="other_projects">
             <?php
-            $sql = "SELECT * FROM stonesu0_stonestreet.projects";
+            $sql = "SELECT * FROM projects";
             $query = mysqli_query($conn, $sql);
             while($result = mysqli_fetch_assoc($query)){
                 ?>
@@ -582,11 +582,11 @@ if($logged_in){
             </form>
         </div>
         <a href="#" id="show_add_snippet_button" onclick="show_add_snippet()">Add Snippet</a>
-        <div id="snippets">
+        <div id="snippets_inner">
             <?php
             //TODO need to be able to add directory or at least code to be inserted into directory that I create.
             //maybe require that the code be condensed into one php or html page.
-            $sql = "SELECT * FROM stonesu0_stonestreet.snippets";
+            $sql = "SELECT * FROM snippets";
             $query = mysqli_query($conn, $sql);
             while($result = mysqli_fetch_assoc($query)){
                 ?>

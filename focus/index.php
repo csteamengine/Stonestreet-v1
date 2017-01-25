@@ -9,7 +9,11 @@ include "../includes/php/general.php";
 include "../includes/php/base.php";
 $id = get_value('id');
 
-$sql = "SELECT * FROM projects WHERE id=".$id;
+$sql = "SELECT *
+        FROM projects proj 
+        LEFT JOIN project_images images
+        ON proj.id = images.projectID
+        WHERE proj.id=".$id;
 $query = mysqli_query($conn, $sql);
 if(mysqli_num_rows($query) > 0){
     $result = mysqli_fetch_assoc($query);
@@ -29,7 +33,6 @@ if(mysqli_num_rows($query) > 0){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Focus | StoneStreet</title>
-    <link rel="icon" type="image/x-icon" href="/faviconblack.png" />
 
     <link rel="stylesheet" href="focus.css">
     <link rel="icon" type="image/x-icon" href="../includes/images/faviconblack.png" />

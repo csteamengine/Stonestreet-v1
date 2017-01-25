@@ -88,8 +88,15 @@ li.selected{
 #contact{
 
 }
-#snippets{
-
+#snippets_inner{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    display:                 -webkit-flex; /* Safari */
+    flex-wrap:               wrap;
+    -webkit-flex-wrap:       wrap;         /* Safari */
+    justify-content:         center;
+    -webkit-justify-content: center;       /* Safari */
 }
 #other_projects{
     width: 80%;
