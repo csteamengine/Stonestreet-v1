@@ -36,7 +36,7 @@ include "includes/php/header.php";
             <h1>A little about me</h1>
             <p>
                 I am a Software engineering major at Iowa State University and I'm currently in my Senior year. I am 
-                a founding member of the ISU Web Development Club, as well as a previous President. 
+                a founding member of the ISU Web Development Club, as well as a former President.
                 As a kid I always had an interest in computers, and Iowa State gave me the opportunity to make them my career. 
             </p>
         </div>
