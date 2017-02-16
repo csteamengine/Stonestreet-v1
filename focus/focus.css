@@ -4,10 +4,40 @@
     margin: 0 auto;
     position: relative;
 }
+#project_title{
+    font-size: 45px;
+}
 #description{
     width: 60%;
     margin: 0 auto;
 }
+
+.grid_icons{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.grid_item_icon{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,.3);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
 .link{
     position: absolute;
     height: 100%;
@@ -15,4 +45,7 @@
     left: 0;
     top: 0;
 
+}
+hr{
+    width: 60%;
 }

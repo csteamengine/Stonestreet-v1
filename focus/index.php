@@ -22,6 +22,18 @@ if(mysqli_num_rows($query) > 0){
     exit;
 }
 
+$collabSQL = "SELECT * FROM collaborators WHERE projectID = ".$id;
+$collabQuery = mysqli_query($conn, $collabSQL);
+
+
+$techSQL = "SELECT * FROM projectTechnologies projTech
+INNER JOIN technologies tech
+ON projTech.projectTechnologiesID = tech.technologiesID
+WHERE projectID = ".$id;
+$techQuery = mysqli_query($conn, $techSQL);
+
+
+
 
 
 ?>
@@ -68,7 +80,83 @@ include "../includes/php/header.php";
         ?>
 
         <h1 id="project_title"><?= $result['title'] ?></h1>
-        <p id="description"><?= $result['text'] ?></p>
+        <p id="description" style="padding-bottom: 20px;"><?= $result['text'] ?></p>
+        <?php
+            if(mysqli_num_rows($collabQuery) > 0){
+                ?>
+                <h1>Role</h1>
+                <div class="grid" style="list-style: none; margin: 0;">
+                    <p style="padding-bottom: 20px; color: rgba(0,0,0,.6);width: 60%; margin: 0 auto;"><?= $result['projectRole'] ?></p>
+                </div>
+                <h1>Collaborators</h1>
+                <div class="grid" style="list-style: none; padding-bottom: 10px; margin: 0;">
+                <?php
+                while($collabResult = mysqli_fetch_assoc($collabQuery)){
+                    ?>
+                    <h3 class="grid_item"><?= $collabResult['firstName'] ?> <?= $collabResult['lastName'] ?></h3>
+                    <p class="grid_item" style="margin-top: -15px; color: rgba(0,0,0,.6);"><?= $collabResult['contribution'] ?></p>
+                    <?php
+
+                }
+                ?>
+                </div>
+                <?php
+            }
+
+        ?>
+        <?php
+        if(mysqli_num_rows($techQuery) > 0){
+            ?>
+            <h1>Technologies</h1>
+            <div class="grid" style="list-style: none; margin: 0;">
+                <?php
+                while($techResult = mysqli_fetch_assoc($techQuery)){
+                    ?>
+                    <h3 class="grid_item"><?= $techResult['name'] ?></h3>
+                    <p class="grid_item" style="margin-top: -15px; color: rgba(0,0,0,.6);"><?= $techResult['description'] ?></p>
+                    <?php
+
+                }
+                ?>
+            </div>
+            <?php
+        }
+        ?>
+        <?php
+            if($result['lessonsLearned'] != ""){
+                ?>
+                <h1>Lessons Learned</h1>
+                <div class="grid" style="list-style: none; margin: 0;">
+                    <p style="padding-bottom: 20px; color: rgba(0,0,0,.6);width: 60%; margin: 0 auto;"><?= $result['lessonsLearned'] ?></p>
+                </div>
+            <?php
+            }
+        ?>
+        <?php
+        if($result['githubRepo'] != ""){
+            ?>
+            <h1>Links</h1>
+            <div class="grid_icons" style="list-style: none; margin: 0; ">
+                <div class="grid_item_icon" >
+                    <a href="<?= $result['githubRepo'] ?>" target="_blank">
+                        <img src="/includes/images/icons/github.png" style="padding-bottom: 20px; height: 100%; width: 100%; margin: 0 auto; ">
+                    </a>
+                </div>
+                <?php
+                    if($result['url'] != "") {
+                        ?>
+                        <div class="grid_item_icon" >
+                            <a href="<?= $result['url'] ?>" target="_blank">
+                                <img src="/includes/images/icons/website.png" style="padding-bottom: 20px; height: 100%; width: 100%; margin: 0 auto; ">
+                            </a>
+                        </div>
+                        <?php
+                    }
+                ?>
+            </div>
+            <?php
+        }
+        ?>
     </div>
 </div>
 <?php
