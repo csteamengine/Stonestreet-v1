@@ -36,7 +36,107 @@ include "../includes/php/header.php";
 <div id="content">
     <div id="subcontent">
         <h1>Experience</h1>
-        <p>This page will contain information about my work experience, project experience, and things self-gained experience.</p>
+        <div class="grid">
+            <div class="grid_item">
+                <h1>Saltech Systems</h1>
+                <div class="sub-section">
+                    <h3>Responsibilities</h3>
+                    <ul>
+                        <li>Full stack web development for clients all across the United States and Canada</li>
+                        <li>Track down and fix bugs for existing client applications.</li>
+                        <li>Develop and maintain a database for client information</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="sub-section">
+                    <h3>Team</h3>
+                    <ul>
+                        <li>Development Team</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="sub-section">
+                    <h3>Technology Used</h3>
+                    <ul>
+                        <li>Coldfusion</li>
+                        <li>JavaScript</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="sub-section">
+                    <h3>Lessons Learned</h3>
+                    <ul>
+                        <li>Importance of data security.</li>
+                        <li>Server side programming with Coldfusion</li>
+                        <li>Implementation of a MVC using Fusebox.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid_item">
+                <h1>Iowa State University Admissions</h1>
+                <div class="sub-section">
+                    <h3>Responsibilities</h3>
+                    <ul>
+                        <li>Maintain and develop the Iowa State Admissions website.</li>
+                        <li>Provide application support for Admissions staff.</li>
+                        <li>Develop new applications for Admissions staff.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="sub-section">
+                    <h3>Team</h3>
+                    <ul>
+                        <li>Development Team</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="sub-section">
+                    <h3>Technology Used</h3>
+                    <ul>
+                        <li>PHP</li>
+                        <li>JavaScript</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="sub-section">
+                    <h3>Lessons Learned</h3>
+                    <ul>
+                        <li>Ajax calls to a RESTful web service.</li>
+                        <li>Development of a custom built RESTful web service using PHP.</li>
+                        <li>Securing a database with sensitive information.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid_item">
+                <h1>PR-Tracker</h1>
+                <div class="sub-section">
+                    <h3>Responsibilities</h3>
+                    <ul>
+                        <li>Sole Developer</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="sub-section">
+                    <h3>Technology Used</h3>
+                    <ul>
+                        <li>PHP</li>
+                        <li>JavaScript</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="sub-section">
+                    <h3>Lessons Learned</h3>
+                    <ul>
+                        <li>Data abstraction to allow for maximum different events.</li>
+                        <li>Account login with Facebook.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 

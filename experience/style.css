@@ -1,11 +1,24 @@
-
+.grid{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+ul{
+    margin: 0 auto;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
 
 .contact_hr{
     width: 60%;
 }
 #subcontent{
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 #contact{
@@ -18,10 +31,13 @@
 
 }
 .grid_item{
+    display: inline;
+    text-align: center;
     position: relative;
     margin: 20px;
     width: 350px;
-    border: none;
+    border: 1px solid black;
+    padding: 10px;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;

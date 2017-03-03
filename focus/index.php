@@ -28,8 +28,8 @@ $collabQuery = mysqli_query($conn, $collabSQL);
 
 $techSQL = "SELECT * FROM projectTechnologies projTech
 INNER JOIN technologies tech
-ON projTech.projectTechnologiesID = tech.technologiesID
-WHERE projectID = ".$id;
+ON projTech.technologiesID = tech.technologiesID
+WHERE projTech.projectID = ".$id;
 $techQuery = mysqli_query($conn, $techSQL);
 
 
@@ -81,13 +81,19 @@ include "../includes/php/header.php";
 
         <h1 id="project_title"><?= $result['title'] ?></h1>
         <p id="description" style="padding-bottom: 20px;"><?= $result['text'] ?></p>
+
         <?php
-            if(mysqli_num_rows($collabQuery) > 0){
+            if($result['projectRole'] != ""){
                 ?>
                 <h1>Role</h1>
                 <div class="grid" style="list-style: none; margin: 0;">
                     <p style="padding-bottom: 20px; color: rgba(0,0,0,.6);width: 60%; margin: 0 auto;"><?= $result['projectRole'] ?></p>
                 </div>
+                <?php
+            }
+            if(mysqli_num_rows($collabQuery) > 0){
+                ?>
+
                 <h1>Collaborators</h1>
                 <div class="grid" style="list-style: none; padding-bottom: 10px; margin: 0;">
                 <?php
