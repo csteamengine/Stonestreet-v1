@@ -36,7 +36,8 @@ include "../includes/php/header.php";
 <div id="content">
     <div id="subcontent">
         <h1>Education</h1>
-        <div id="course1">
+        <div class="grid">
+            <div id="course1 grid_item">
             <h2>Software Engineering 329</h2>
             <div >
                 <p>SE 329 was a very project-oriented class, where we had to complete 4 group projects with the same group throughout the semester. This class taught me time management, as well as requirements planning, as we had very little time to complete each project. This class helped to build my group working skills, by forcing me to depend on my group members to get their assigned tasks done for each project.</p>
@@ -53,6 +54,7 @@ include "../includes/php/header.php";
             <div >
                 <p>Computer Science 228 was my first exposure to data structures, and fairly basic, yet well known algorithms. This class forced me to begin thinking outside the box, and it was, I believe, the most influential classes I took at Iowa State. It provided me with the knowledge to percieve problems with code that I had never considered up to that points, and armed me with the tools to fix them. I believe this class helped me to become a better overall thinker, and it taught me to look at a problem in different ways, besides head-on.</p>
             </div>
+        </div>
         </div>
     </div>
 </div>
