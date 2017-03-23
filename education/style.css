@@ -14,22 +14,11 @@ li{
     list-style: none;
 }
 
-.contact_hr{
-    width: 60%;
-}
 #subcontent{
     width: 100%;
     margin: 0 auto;
 }
-#contact{
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    justify-content: center;
-    -webkit-justify-content: center;
 
-}
 .grid_item{
     display: inline;
     text-align: center;
@@ -48,87 +37,4 @@ li{
     background-position: center;
     background-size: cover;
 
-}
-
-.icon{
-    opacity: .5;
-    height: 70px;
-    width: 70px;
-    border-radius: 45px;
-    -moz-box-shadow:    inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;
-    display: inline-flex;
-    padding: 10px;
-    margin: 5px auto 5px auto;
-}
-.icon:hover{
-    opacity: .6;
-}
-#github{
-    background: url('../includes/images/icons/github.png') center no-repeat;
-    background-size: 65%;
-}
-#linked_in{
-    background: url('../includes/images/icons/linked_in.png') center no-repeat;
-    background-size: 65%;
-}
-#facebook{
-    background: url('../includes/images/icons/facebook.png') center no-repeat;
-    background-size: 65%;
-}
-#pinterest{
-    background: url('../includes/images/icons/pinterest.png') center no-repeat;
-    background-size: 65%;
-}
-#email{
-    width: 350px;
-}
-#other{
-    padding: auto;
-}
-#contact_form{
-    margin-top: 10px;
-}
-#nameInput, #emailInput, #subjectInput{
-    display: block;
-    margin: 5px auto 5px;
-    width: 90%;
-    height: 30px;
-}
-#messageInput{
-    height: 200px;
-    width: 90%;
-    resize: none;
-    padding-top: 10px;
-}
-#submitInput{
-    width: 100px;
-    height: 30px;
-    font-size: 20px;
-    cursor: pointer;
-    cursor: hand;
-}
-#submitInput:hover{
-    -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,.7);
-    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.7);
-    box-shadow:         inset 0 0 10px rgba(0,0,0,.7);
-}
-.form_input{
-    margin-top: 5px;
-    font-size: 15px;
-    color: black;
-    padding-left: 10px;
-    border-radius: 3px;
-    border: none;
-    -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,.5);
-    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.5);
-    box-shadow:         inset 0 0 10px rgba(0,0,0,.5);
-    font-family: 'Ubuntu', sans-serif;
-}
-.form_input:focus{
-    outline: none;
-    -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,.7);
-    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.7);
-    box-shadow:         inset 0 0 10px rgba(0,0,0,.7);
 }
