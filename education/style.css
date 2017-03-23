@@ -1,4 +1,32 @@
-
+.grid{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.grid_item{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 20px;
+    border: none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+.grid_item_small{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
 
 .contact_hr{
     width: 60%;
@@ -17,23 +45,6 @@
     -webkit-justify-content: center;
 
 }
-.grid_item{
-    position: relative;
-    margin: 20px;
-    width: 350px;
-    border: none;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    background-position: center;
-    background-size: cover;
-
-}
-
 .icon{
     opacity: .5;
     height: 70px;
