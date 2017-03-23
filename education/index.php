@@ -76,7 +76,7 @@ include "../includes/php/header.php";
                     <p>When you only take core classes, you don't get much outside perspective. All you learn, is core programming techniques, and that is all the skills you have to solve problems. In my general education classes, I learned to think differently, which allows me to percieve problems in more than just the traditional programming mindset. Some of my general education classes have taught me how to think globally, which expands my abilities to solve global issues, instead of just the ones I see in front of me.</p>
                 </div>
             </div>
-            <divclass="grid_item">
+            <div class="grid_item">
                 <h2>Describe specific instances where you used knowledge/skills from general elective courses for innovation in engineering problems. What impact does meshing technical engineering skills and general electives-based innovation have in an economic, global, or societal context? </h2>
                 <div >
                     <p>One thing I learned from a psychology class, is how people think when they are using a computer. This knowledge helps me to develop websites and software to suit a user's wants, rather than just their needs. We also learned, that often times users don't know what they want. One quote that I feel encompasses this idea, is “If I had asked people what they wanted, they would have said faster horses.” by Henry Ford. </p>
