@@ -48,13 +48,13 @@ include "../includes/php/header.php";
                 <h2>Computer Science 327</h2>
                 <div >
                     <p>Computer Science 327 was a difficult course for many reasons besides the programming involved in the course.
-                        Throughout the semester we had one individual project to work on, with ten or so graded checkpoints. Since this class had such frequent submission deadlines, I had to learn quickly how to manage my time. I believe that this course helped to prepare me for a workplace environment where projects have very hard progress points. </p>
+                        Throughout the semester we had one individual project to work on, with ten or so graded checkpoints. Since this class had such frequent submission deadlines, I had to learn quickly how to manage my time. I believe that this course helped to prepare me for a workplace environment where projects have very demanding progress checkpoints. </p>
                 </div>
             </div>
             <div id="course3" class="grid_item">
                 <h2>Computer Science 228</h2>
                 <div >
-                    <p>Computer Science 228 was my first exposure to data structures, and fairly basic, yet well known algorithms. This class forced me to begin thinking outside the box, and it was, I believe, the most influential classes I took at Iowa State. It provided me with the knowledge to percieve problems with code that I had never considered up to that points, and armed me with the tools to fix them. I believe this class helped me to become a better overall thinker, and it taught me to look at a problem in different ways, besides head-on.</p>
+                    <p>Computer Science 228 was my first exposure to data structures, and fairly basic, yet well known algorithms. This class forced me to begin thinking outside the box, and it was, I believe, the most influential classes I took at Iowa State. It provided me with the knowledge to perceive problems with code that I had never considered up to that points, and armed me with the tools to fix them. I believe this class helped me to become a better overall thinker, and it taught me to look at a problem in different ways, besides head-on.</p>
                 </div>
             </div>
         </div>
