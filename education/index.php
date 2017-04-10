@@ -47,7 +47,8 @@ include "../includes/php/header.php";
             <div id="course2" class="grid_item">
                 <h2>Computer Science 327</h2>
                 <div >
-                    <p>Computer Science 327 was my first exposure to C and C++, two languages that are among the most used languages out there. Throughout the semester we had one individual project to work on, with ten or so graded checkpoints. This class helped to teach me how to pace myself when programming. It is easy to get carried away in one sitting, and we so focussed on finishing early, that you mess something up in the long run. Since often times, code that is written further down the line often relies on the early code, it is important to get it right the first time. This is a value that I think can be applied to not just programming, but also any project that you are undergoing. To build a house, you will need a strong foundation.</p>
+                    <p>Computer Science 327 was a difficult course for many reasons besides the programming involved in the course.
+                        Throughout the semester we had one individual project to work on, with ten or so graded checkpoints. Since this class had such frequent submission deadlines, I had to learn quickly how to manage my time. I believe that this course helped to prepare me for a workplace environment where projects have very hard progress points. </p>
                 </div>
             </div>
             <div id="course3" class="grid_item">
